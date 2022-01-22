@@ -15,7 +15,7 @@ public class MonApplication {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         ClientController ctrl = (ClientController) context.getBean("controller");
-        Client client = new Client(
+        Client client = new Client("hajar");
 
         List<Facture> factures=Arrays.asList(
           new Facture(1500,"facture1",client),new Facture(2000,"facture2",client)
